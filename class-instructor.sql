@@ -5,7 +5,7 @@ select CLASS.ID AS 'Course ID #',concat(Subject, ' ',Section) as 'Course name',c
 	from Instructor
 	join Class
 		on INSTRUCTOR.id = CLASS.InstructorId 
-		where IsTenured = 1
+	where IsTenured = 1
 	order by Lastname;
 
 --select * from Instructor
