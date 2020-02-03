@@ -1,0 +1,24 @@
+/*
+CREATE TABLE students (
+	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	firstname NVARCHAR(30) NOT NULL,
+	lastname NVARCHAR(30) NOT NULL,
+	active BIT NOT NULL DEFAULT 1,
+	birthday DATETIME NOT NULL,
+	loan DECIMAL(8, 2)
+);
+
+CREATE TABLE technology (
+	id INT NOT NULL PRIMARY KEY IDENTITY(100, 100),
+	name nvarchar(80) NOT NULL,
+	primaryinstructor NVARCHAR(30) NOT NULL,
+);
+
+CREATE TABLE cohort (
+	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	starttime DATETIME,
+	capacity INT NOT NULL DEFAULT 0,
+	enrolled INT NOT NULL DEFAULT 0,
+	technologyid INT FOREIGN KEY REFERENCES technology(id)
+)
+*/
